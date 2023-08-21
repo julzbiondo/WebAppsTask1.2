@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>1.2P JavaScript</title>
+
+
+</head>
+<body>
+
+    <nav class="navbar">   
+        <ul class="nav-list">
+            <li><a href="javascript.html">JavaScript Page</a></li>
+            <li><a href="ResponsiveWebDesign.html">Responsive Design Page</a></li>
+        </ul>
+    </nav>
+
+    <h1>String Methods</h1>
+
+    <h2>String Length</h2>
+    <p>This method counts each character of a chosen string.</p>
+    <p>In this case, the string we will count the length of is "Pineapple".</p>
+    <p id="length"></p>
+
+    <h2>String replace</h2>
+    <p>This method replaces the current text with a new string, for this example we will use a button which will change the text.</p>
+    <p>In this case, the string we will start with is "Pineapple" and we will change it to "Computer".</p>
+    <button onclick="replaceText()">Change Text!</button>
+    <p id="replace">Pineapple</p>
+
+    <h2>String toUpperCase</h2>
+    <p>This method turns the chosen to into all uppercase letters.</p>
+    <p>For this example we will use the string: </p>
+    <button onclick="upperCase()">Change toUpper Case</button>
+    <p id="upperCase">I would be delighted if the sea were full of cucumber juice.</p>
+
+    <h2>String substring</h2>
+    <p>This method extracts part of a string and returns the extracted parts in a new string</p>
+    <p>In this example, we will cut 9 characters from the string, starting from 4 characters into the string.</p>
+    <p id="startText">The worst thing about being at the top of the career ladder is that there's a long way to fall.</p>
+    <p id="sub"></p>
+
+    <h2>String concat</h2>
+    <p>This method brings two strings together and puts them in the same line.</p>
+    <p> The two words we will use are "Birthday" and "Card"</p>
+    <p id="text1">Birthday</p>
+    <p id="text2">Card</p>
+    <p id="concat"></p>    
+
+
+    <h1>Number Methods</h1>
+
+    <h2>toString</h2>
+    <p>This method returns the number as a string.</p>
+    <p>In this example, we will use the interger 43</p>
+    <p id="toString"></p>
+
+    <h2>toExponential</h2>
+    <p>This method returns the number as a string in exponential notation.</p>
+    <p>Starting number is 5.335</p>
+    <p id="toExpo"></p>
+
+    <h2>toFixed</h2>
+    <p>This method returns the number rounded to a set decimal place.</p>
+    <p>The starting number is 53.45284 and it will be rounded to 2 decimal places</p>
+    <p id ="toFixed"></p>
+
+    <h2>toPrecision</h2>
+    <p>This method returns the number written with a specified length</p>
+    <p>The starting number is 35.298740</p>
+    <p>This number will be written to the lenghts, 3, 5 and 7</p>
+    <p id="toPre"></p>
+    
+    
+
+    <h2>ValueOf</h2>
+    <p>This method returns the number as a number.</p>
+    <p>The number will be 284</p>
+    <p id="ValOf"></p>
+    
+    <h1>Array Methods</h1>
+
+    <h2>Array length</h2>
+    <p>This method returns the length of an array</p> 
+    <p>In this example, the array will be 5 items long</p>
+    <p>The array is ["Tree", "Potato", "Green", "Table", "Pineapple"]</p>
+    <p id="arrLength"></p>
+
+    <h2>Array pop</h2>
+    <p>This method removes the last element of an array and returns that element.</p>
+    <p>In this example, the array will be ["43", "64", "234", "6345"]</p>
+    <p id="arrPop"></p>
+
+    <h2>Array flat</h2>
+    <p>This method creates a new array ussing the given array with sub array elements</p>
+    <p>In this example, the array will be [[23", "342"], ["523432", "1223"], ["23423", "3243"]]</p>
+    <p id="arrFlat"></p>
+
+    <h2>Array concat</h2>
+    <p>This method joins two or more arrays and returns a copy of the joined arrays</p>
+    <p>In this example, the arrays will be ["Tree", "Potato", "Green", "Table", "Pineapple"] and ["43", "64", "234", "6345"]</p>
+    <p id="arrCon"></p>
+
+    <h2>Array join</h2>
+    <p>This method joins all elements of an array into a string</p>
+    <p>In this example, the array will be ["Tree", "Potato", "Green", "Table", "Pineapple"]</p>
+    <p id="arrJoin"></p>
+
+    <h1>Date Objects 5 variations</h1>
+
+    <h2>Date getFullYear</h2>
+    <p>This method returns the year of a date as a four digit number</p>
+    <p>In this example, the date will be 24/05/2021</p>
+    <p id="dateYear"></p>
+
+    <h2>Date getMonth</h2>
+    <p>This method returns the month of a date as a number from 0-11</p>
+    <p>In this example, the date will be 24/05/2021</p>
+    <p id="dateMonth"></p>
+
+    <h2>Date getDate</h2>
+    <p>This method returns the day of a date as a number from 1-31</p>
+    <p>In this example, the date will be 24/05/2021</p>
+    <p id="dateDay"></p>
+
+    <h2>Date getHours</h2>
+    <p>This method returns the hour of a date as a number from 0-23</p>
+    <p>In this example, the date will be 24/05/2021 14:30</p>
+    <p id="dateHour"></p>
+
+    <h2>Date getMinutes</h2>
+    <p>This method returns the minutes of a date as a number from 0-59</p>
+    <p>In this example, the date will be 24/05/2021 14:30</p>
+    <p id="dateMin"></p>
+
+    <h1>Function Methods</h1>
+
+    <h2>Function to compute the product of 2 numbers</h2>
+    <p>In this example, the numbers will be 5 and 6</p>
+    <p id="funcProd"></p>
+
+    <h2>Function to convert Fahrenheit to Celsius</h2>
+    <p>In this example, the Fahrenheit will be 50 degrees</p>
+    <p id="funcTemp"></p>
+
+
+
+
+
+
+    <script>
+
+    //String Methods
+    let text = "Pineapple";
+    document.getElementById("length").innerHTML = text.length;
+
+    function replaceText() {
+        let text = document.getElementById("replace").innerHTML;
+        document.getElementById("replace").innerHTML = text.replace("Pineapple", "Computer");
+
+
+    }
+
+    function upperCase() {
+        let text = document.getElementById("upperCase").innerHTML;
+        document.getElementById("upperCase").innerHTML = text.toUpperCase();
+
+    }
+
+    let str = document.getElementById("startText").innerHTML;
+    document.getElementById("sub").innerHTML = str.substr(4,9);
+
+    let text1 = document.getElementById("text1").innerHTML;
+    let text2 = document.getElementById("text2").innerHTML;
+    let text3 = text1.concat(" ", text2);
+    document.getElementById("concat").innerHTML = text3;
+
+    //Number methods
+    let x = 43;
+    document.getElementById("toString").innerHTML = x.toString();
+
+    let y = 5.335;
+    document.getElementById("toExpo").innerHTML = y.toExponential();
+
+    let z = 53.45284;
+    document.getElementById("toFixed").innerHTML = z.toFixed(2);
+
+    let m = 35.298740;
+    document.getElementById("toPre").innerHTML = 
+        m.toPrecision(3) + "<br>" +
+        m.toPrecision(5) + "<br>" +
+        m.toPrecision(7);  
+
+    let j = 284;
+
+        document.getElementById("ValOf").innerHTML = j.valueOf();
+
+    let q = ["Tree", "Potato", "Green", "Table", "Pineapple"];
+    document.getElementById("arrLength").innerHTML = q.length;
+
+    let w = ["43", "64", "234", "6345"];
+    document.getElementById("arrPop").innerHTML = w.pop();
+
+    let e = [["23", "342"], ["523432", "1223"], ["23423", "3243"]];
+    document.getElementById("arrFlat").innerHTML = e.flat();
+
+    let r = ["Tree", "Potato", "Green", "Table", "Pineapple"];
+    let t = ["43", "64", "234", "6345"];
+    document.getElementById("arrCon").innerHTML = r.concat(t);
+
+    let k = ["Tree", "Potato", "Green", "Table", "Pineapple"];
+    document.getElementById("arrJoin").innerHTML = k.join();
+
+    //Date Objects
+    let d = new Date("2021-05-24");
+    document.getElementById("dateYear").innerHTML = d.getFullYear();
+
+    let f = new Date("2021-05-25");
+    document.getElementById("dateMonth").innerHTML = f.getMonth();
+
+    let g = new Date("2021-05-26");
+    document.getElementById("dateDay").innerHTML = g.getDate();
+
+    let h = new Date("2021-05-27 14:30");
+    document.getElementById("dateHour").innerHTML = h.getHours();
+
+    let i = new Date("2021-05-28 14:30");
+    document.getElementById("dateMin").innerHTML = i.getMinutes();
+
+    //Function Methods
+
+    function myFunction(a, b) {
+        return a * b;
+    }
+    document.getElementById("funcProd").innerHTML = myFunction(5, 6);
+
+    function toCelsius(fahrenheit) {
+        return (5/9) * (fahrenheit-32);
+    }
+    document.getElementById("funcTemp").innerHTML = toCelsius(50);
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+</html>
